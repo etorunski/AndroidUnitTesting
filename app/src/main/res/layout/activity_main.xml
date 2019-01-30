@@ -12,8 +12,13 @@
             android:layout_height="wrap_content"
             android:text="Click to test"/>
 
-    <EditText android:layout_width="match_parent"
+    <TextView android:layout_width="match_parent"
               android:layout_height="wrap_content"
-              android:id="@+id/testEditText"/>
+                android:id="@+id/textViewField"/>
+
+    <CheckBox android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Allow button to change text"
+              android:id="@+id/testCheckbox"/>
 
 </LinearLayout>

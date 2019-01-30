@@ -46,7 +46,5 @@ class ExampleInstrumentedTest {
             add("Fourth")
             add("Fifth")
         }
-
-
     }
 }

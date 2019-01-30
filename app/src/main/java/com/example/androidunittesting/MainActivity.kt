@@ -2,8 +2,7 @@ package com.example.androidunittesting
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
+import android.widget.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -12,8 +11,14 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         var button = findViewById<Button>(R.id.buttonTest)
-        var editText = findViewById<EditText>(R.id.testEditText)
+        var textView = findViewById<TextView>(R.id.textViewField)
+        var checkBox = findViewById<CheckBox>(R.id.testCheckbox)
 
-        button.setOnClickListener{ _ -> editText.setText("The button works!")}
+        //add an onclick handler for the button:
+        button.setOnClickListener{
+
+            if(checkBox.isChecked)
+                textView.setText("The button works!")
+        }
     }
 }
